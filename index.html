@@ -1,67 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Engineering Student Hub</title>
-
-<!-- Correct CSS Link -->
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Engineering Student Hub - Access study materials, mini projects, and coding practice resources.">
+  <title>Engineering Student Hub</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <i class="fa-solid fa-graduation-cap">null</i>
+        <span>StudentHub</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#login" class="btn btn-secondary">Login</a>
+      </div>
+    </div>
+  </header>
 
-<h1>Engineering Student Hub</h1>
-<p>Notes | Projects | Learning Resources</p>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Engineering Student Hub</h1>
+      <p class="hero-subtitle">Your central resource for academic notes, project ideas, and hands-on coding practice.</p>
+      <div class="hero-cta">
+        <a href="#resources" class="btn btn-primary">Get Started</a>
+        <a href="#projects" class="btn btn-outline">Explore Projects</a>
+      </div>
+    </div>
+  </section>
 
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="subjects.html">Subjects</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+  <!-- Main Resource Grid -->
+  <main id="resources" class="container main-content">
+    <div class="section-title">
+      <h2>Academic & Technical Resources</h2>
+      <p>Everything you need to excel in your computer science and engineering coursework.</p>
+    </div>
 
-<!-- Login Button -->
-<a href="login.html"><button>Login</button></a>
+    <div class="card-grid">
+      
+      <!-- Card 1: Study Materials -->
+      <article class="card">
+        <div class="card-icon blue">
+          <i class="fa-solid fa-book-open">null</i>
+        </div>
+        <h3>Study Materials</h3>
+        <p>Access structured notes and reference guides for Operating Systems, Computer Networks, and Data Structures.</p>
+        <a href="#" class="card-link">View Notes <i class="fa-solid fa-arrow-right">null</i></a>
+      </article>
 
-</header>
+      <!-- Card 2: Mini Projects -->
+      <article class="card">
+        <div class="card-icon purple">
+          <i class="fa-solid fa-lightbulb">null</i>
+        </div>
+        <h3>Mini Projects</h3>
+        <p>Discover beginner to intermediate full-stack and domain-specific engineering project ideas with starter templates.</p>
+        <a href="#" class="card-link">Explore Projects <i class="fa-solid fa-arrow-right">null</i></a>
+      </article>
 
-<section class="container">
+      <!-- Card 3: Coding Practice -->
+      <article class="card">
+        <div class="card-icon green">
+          <i class="fa-solid fa-code">null</i>
+        </div>
+        <h3>Coding Practice</h3>
+        <p>Sharpen your problem-solving skills with practical programming exercises in C, Java, Python, and Data Structures.</p>
+        <a href="#" class="card-link">Start Practice <i class="fa-solid fa-arrow-right">null</i></a>
+      </article>
 
-<div class="card">
-<h2>📚 Study Materials</h2>
-<p>Access notes for Operating Systems, Computer Networks, and Data Structures.</p>
-<button>View Notes</button>
-</div>
+    </div>
+  </main>
 
-<div class="card">
-<h2>💡 Mini Projects</h2>
-<p>Explore simple engineering project ideas for beginners.</p>
-<button>Explore Projects</button>
-</div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Engineering Student Hub. Designed for learners and developers.</p>
+    </div>
+  </footer>
 
-<div class="card">
-<h2>🚀 Coding Practice</h2>
-<p>Practice programming in C, Java, Python and improve skills.</p>
-<button>Start Coding</button>
-</div>
-
-</section>
-
-<footer>
-<p>© 2026 Engineering Student Hub</p>
-</footer>
-
-<!-- Correct JS Link -->
-<script src="script.js"></script>
-
+  <!-- JS Script -->
+  <script src="script.js"></script>
 </body>
-
 </html>
